@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>家裡蹲創意印刷</title>
+
+    <link rel="icon" href="./images/base/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/base/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/base/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+    <div class="switch-menu">
+        <div class="movingWindow" id="movingWindow"><button id="moveButton">sw</button>
+            <button id="changeColorButton4">1</button>
+            <button id="changeColorButton1">2</button>
+            <button id="changeColorButton2">3</button>
+            <button id="changeColorButton3">4</button>
+        </div>
+    </div>
+    <div class="header" id="header"></div>
+    <div class="container">
+        <div class="container__inner">
+            <div class="carousel-and-news">
+                <div class="carousel-and-news__inner inner-w">
+                    <div class="carousel" id="carousel">
+                    </div>
+                    <!-- <div class="carousel-and-news__news">
+                        <form class="search_form" id="search-form">
+                            <input type="text" class="search-form--input" id="search-input" onkeyup="search()"
+                                autocomplete="off" placeholder="請輸入產品關鍵字">
+                            <button type="submit" class="search-form--button" id="search-button"><i
+                                    class="fa-solid fa-magnifying-glass" style="color: #fff;"></i></button>
+                            <div class="search-form--list" id="search-list">
+                                <div class="search_listItem search_no-search-result" style="display: none;">
+                                    <h5>查無符合的產品</h5>
+                                    <p>請改用其他關鍵字試試看</p>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="carousel-and-news__news__member">
+                            會員專區
+                        </div>
+                    </div> -->
+                </div>
+
+            </div>
+            <!-- <div class="news-and-links inner-w">
+                <div class="news-and-links__news" id="index-news">
+                    最新消息
+                </div>
+                <div class="news-and-links__links">
+                    <div class="news-and-links__links--link">紙東西官網</div>
+                    <div class="news-and-links__links--link">紙東西蝦皮</div>
+                </div>
+            </div> -->
+            <div class="hot-products inner-w">
+                <h1>熱銷產品</h1>
+                <div class="hot-products__products">
+                    <a class="hot-product__product product-item">
+                        <div class="product-item__img">
+                            <img src="./images/carousel/product1.png" alt="">
+                        </div>
+                        <div class="product-item__infor">
+                            <h3 class="product-item__infor--title">卡片拼模</h3>
+                            <p class="product-item__infor--content">透過合併模數，針對少印量、大尺寸印刷品提供超低價彩色印刷與產品後加工。</p>
+                        </div>
+                    </a>
+                    <a class="hot-product__product product-item">
+                        <div class="product-item__img">
+                            <img src="./images/carousel/product2.png" alt="">
+                        </div>
+                        <div class="product-item__infor">
+                            <h3 class="product-item__infor--title">房門掛牌</h3>
+                            <p class="product-item__infor--content">100張起印，適用於名片、會員卡、集點卡、店卡、產品說明卡、保證卡、小廣告牌</p>
+                        </div>
+                    </a>
+                    <a class="hot-product__product product-item">
+                        <div class="product-item__img">
+                            <img src="./images/carousel/product3.png" alt="">
+                        </div>
+                        <div class="product-item__infor">
+                            <h3 class="product-item__infor--title">造型卡片</h3>
+                            <p class="product-item__infor--content">不限盒數1盒起印，獨家提供數十支公版刀模造型可任選。</p>
+                        </div>
+                    </a>
+                    <a class="hot-product__product product-item">
+                        <div class="product-item__img">
+                            <img src="./images/carousel/product4.png" alt="">
+                        </div>
+                        <div class="product-item__infor">
+                            <h3 class="product-item__infor--title">對摺名片</h3>
+                            <p class="product-item__infor--content">透過合併模數，針對少印量、大尺寸印刷品提供超低價彩色印刷與產品後加工。</p>
+                        </div>
+                    </a>
+                    <a class="hot-product__product product-item">
+                        <div class="product-item__img">
+                            <img src="./images/carousel/product5.png" alt="">
+                        </div>
+                        <div class="product-item__infor">
+                            <h3 class="product-item__infor--title">吊牌合版</h3>
+                            <p class="product-item__infor--content">100張起印，適用於安親班、服飾區域劃分、企業活動推廣等等</p>
+                        </div>
+                    </a>
+                    <a class="hot-product__product product-item">
+                        <div class="product-item__img">
+                            <img src="./images/carousel/product6.png" alt="">
+                        </div>
+                        <div class="product-item__infor">
+                            <h3 class="product-item__infor--title">卡片拼模</h3>
+                            <p class="product-item__infor--content">透過合併模數，針對少印量、大尺寸印刷品提供超低價彩色印刷與產品後加工。</p>
+                        </div>
+                    </a>
+                    <a class="hot-product__product product-item">
+                        <div class="product-item__img">
+                            <img src="./images/carousel/product7.png" alt="">
+                        </div>
+                        <div class="product-item__infor">
+                            <h3 class="product-item__infor--title">對摺軋型卡片</h3>
+                            <p class="product-item__infor--content">100張起印，適用於：集點卡、產品說明卡、保證卡、造型邀請卡等等。</p>
+                        </div>
+                    </a>
+                    <a class="hot-product__product product-item">
+                        <div class="product-item__img">
+                            <img src="./images/carousel/product2.png" alt="">
+                        </div>
+                        <div class="product-item__infor">
+                            <h3 class="product-item__infor--title">卡片拼模</h3>
+                            <p class="product-item__infor--content">透過合併模數，針對少印量、大尺寸印刷品提供超低價彩色印刷與產品後加工。</p>
+                        </div>
+                    </a>
+                </div>
+                <a href="" class="hot-products__button more-button">查看更多產品</a>
+            </div>
+            <div class="index__product-banner product-banner">
+                <div class="index__product-banner--left-bg"></div>
+                <div class="index__product-banner__inner product-banner__inner inner-w">
+                    <div class="index__product-banner__img"><img src="./images/index/750.png" alt=""></div>
+                    <div class="index__product-banner__infor">
+                        <div class="index__product-banner__infor--title">
+                            <h1>什麼是750？什麼是ID4？</h1>
+                            <h2>印刷相關系列影片全新登場！</h2>
+                        </div>
+                        <div class="index__product-banner__infor--content">
+                            <p>準備好踏上印刷的奇幻旅程了嗎？在我們的全新影片教學中，我們將帶你深入印刷的世界，揭開每一張紙背後的故事。學到什麼？從A到Z的印刷基礎知識、色彩管理的精妙之處、不同印刷技術的比較與選擇，以及設計中的印刷考量。為何選擇我們的教學？生動有趣的解說，適合印刷新手；實用技巧，讓你的印刷品質更上一層樓；與業界專家的見解和分享。開始你的印刷之旅，一探印刷的美學和技術！
+                            </p>
+                        </div>
+                        <a href="" class="index__product-banner__infor--button more-button-s">瞭解更多</a>
+                    </div>
+                </div>
+            </div>
+            <div class="index__videos-recommended videos-recommended">
+                <div class="index__videos-recommended__inner videos-recommended__inner ">
+                    <div class="videos-recommended__item">
+                        <div class="videos-recommended__video"><iframe
+                                src="https://www.youtube.com/embed/x7pm3_SIhG0?si=PCn02hDEMNeFOril"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="videos-recommended__infor">
+                            <h3 class="videos-recommended__video__infor--title">
+                                什麼是數位印刷？
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="videos-recommended__item">
+                        <div class="videos-recommended__video"><iframe
+                                src="https://www.youtube.com/embed/x7pm3_SIhG0?si=PCn02hDEMNeFOril"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="videos-recommended__infor">
+                            <h3 class="videos-recommended__video__infor--title">
+                                什麼是合板印刷？
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="videos-recommended__item">
+                        <div class="videos-recommended__video"><iframe
+                                src="https://www.youtube.com/embed/x7pm3_SIhG0?si=PCn02hDEMNeFOril"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="videos-recommended__infor">
+                            <h3 class="videos-recommended__video__infor--title">
+                                什麼是750？
+                            </h3>
+
+                        </div>
+                    </div>
+                    <div class="videos-recommended__item">
+                        <div class="videos-recommended__video"><iframe
+                                src="https://www.youtube.com/embed/x7pm3_SIhG0?si=PCn02hDEMNeFOril"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="videos-recommended__infor">
+                            <h3 class="videos-recommended__video__infor--title">
+                                什麼是ID4？
+                            </h3>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="index__mosaic-wall mosaic-wall">
+                <div class="index__mosaic-wall__inner mosaic-wall__inner">
+                    <div class="mosaic-wall__row">
+                        <div class="mosaic-wall__col mosaic-wall__col-2">
+                            <div class="mosaic-wall__img"><img src="" alt=""></div>
+                        </div>
+                        <div class="mosaic-wall__col mosaic-wall__col-2">
+                            <div class="mosaic-wall__img"><img src="" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="mosaic-wall__row">
+                        <div class="mosaic-wall__col mosaic-wall__col-1">
+                            <div class="mosaic-wall__img"><img src="" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="index__product-banner-2 product-banner-2">
+                <div class="index__product-banner-2__inner">
+                    <div class="index__product-banner-2__infor">
+                        <h1>自由決定書籍尺寸</h1>
+                        <h3>書籍型錄系列的尺寸、規格、材質都可以客製化。</h3>
+                    </div>
+                    <a href="" class="index__product-banner-2__button more-button-s">立即估價</a>
+                </div>
+            </div>
+            <div class="index__mosaic-wall mosaic-wall">
+                <div class="index__mosaic-wall__inner mosaic-wall__inner">
+                    <h1>最新消息</h1>
+                    <div class="mosaic-wall__row">
+                        <div class="mosaic-wall__col mosaic-wall__col-3">
+                            <div class="mosaic-wall__img"><img src="" alt=""></div>
+                        </div>
+                        <div class="mosaic-wall__col mosaic-wall__col-3">
+                            <div class="mosaic-wall__img"><img src="" alt=""></div>
+                        </div>
+                        <div class="mosaic-wall__col mosaic-wall__col-3">
+                            <div class="mosaic-wall__img"><img src="" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contact">
+            </div>
+        </div>
+    </div>
+    <div class="footer" id="footer"></div>
+    <script src="https://kit.fontawesome.com/b9f8451588.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script type="module" src="./js/main.js" defer></script>
+</body>
+
+</html>
