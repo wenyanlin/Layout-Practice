@@ -1,0 +1,22 @@
+.product-item {
+    width: calc($column * 3 + $gutter * 2);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+
+    &__img {
+        background-color: #eee;
+        width: 286px;
+        height: 286px;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    &__infor{
+        &--content{
+            color: $div-color;
+            font-size: .85em;
+        }
+    }
+}

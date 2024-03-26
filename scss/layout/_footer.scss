@@ -1,0 +1,136 @@
+.footer {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+
+    &__inner {
+        width: $inner-width;
+        padding: 20px 0 0;
+        flex-direction: column;
+    }
+
+    &__section {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        border-bottom: 1px $div-color solid;
+    }
+
+    .left-foot {
+        width: 50%;
+        padding: 0 0 15px;
+    }
+
+    .right-foot {
+        width: 50%;
+        display: flex;
+        padding: 15px 0;
+    }
+
+    &__company {
+        &__information {
+            display: flex;
+            padding: 20px 0 0 0;
+        }
+
+        &__location {
+            min-width: 161.2px;
+            margin-right: 30px;
+
+            ul {
+                list-style: none;
+                padding: 0;
+            }
+
+            li {
+                margin-top: 2px;
+                font-size: .9rem;
+
+                i {
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+
+    &__information {
+        width: 25%;
+        text-align: left;
+
+        .fa-2x {
+            font-size: 35px;
+        }
+
+        ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        li {
+            line-height: 24px;
+            padding: 10px 0 0 0;
+            font-size: .9rem;
+
+            i {
+                margin: 0;
+
+                .fa-2x {
+                    font-size: 26pt;
+                    margin-top: 5px;
+                }
+            }
+
+        }
+
+        &:last-child {
+            ul {
+                display: flex;
+
+                li {
+                    a {
+                        .fa-line {
+                            color: #18c633;
+                        }
+
+                        .fa-facebook {
+                            color: #2f6ee5;
+                        }
+                    }
+
+                    &:first-child {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    &__bottommost {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0 0;
+
+        &__inner {
+            width: $inner-width;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        p {
+            font-size: .9rem;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+
+            li {
+                margin-left: 10px;
+                font-size: .9rem;
+            }
+        }
+    }
+}

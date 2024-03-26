@@ -1,0 +1,200 @@
+.carousel-and-news {
+    &__inner {
+        padding: 20px 0;
+        flex-direction: row !important;
+        gap: $gutter;
+    }
+
+    &__news {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        &__member {
+            width: calc(3 * $column + 2 * $gutter);
+            height: calc(518.625px - 60px);
+            border: 1px #eee solid;
+            border-radius: 20px;
+            padding: 20px;
+        }
+    }
+}
+
+.news-and-links {
+    height: 220px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    gap: $gutter;
+
+    &__news {
+        width: calc($column * 9 + $gutter * 8);
+        height: 180px;
+        background-color: #eee;
+        border-radius: 20px;
+
+        padding: 20px;
+    }
+
+    &__links {
+        width: calc($column * 3 + $gutter * 2);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: $gutter;
+
+        &--link {
+            height: 50%;
+            width: calc($column * 3 + $gutter * 2);
+            background-color: #eee;
+            border-radius: 20px;
+
+            padding: 20px;
+        }
+    }
+}
+
+.hot-products {
+    align-items: center;
+    margin-bottom: 100px;
+    padding-top: 40px;
+
+    h1 {
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+
+    &__products {
+        display: flex;
+        flex-wrap: wrap;
+        gap: $gutter;
+        margin-bottom: 20px;
+    }
+}
+
+.index__product-banner {
+    position: relative;
+    padding: 60px 0;
+
+    &--left-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $div-color3;
+        width: calc(100% / 18 * 7);
+        height: 100%;
+    }
+
+    &__inner {
+        height: 100%;
+    }
+
+    &__img {
+        width: calc(50% - $gutter / 2);
+        height: 100%;
+        background-color: #eee;
+        z-index: 1;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    &__infor {
+        width: 43%;
+        height: 70%;
+        position: relative;
+
+        h1 {
+            text-align: left;
+            font-weight: 800;
+            font-size: 2.5em;
+        }
+
+        h2 {
+            color: $div-color;
+            ;
+        }
+
+        p {
+            text-indent: 2em;
+        }
+
+        &--title {
+            margin-bottom: 20px;
+        }
+
+        &--button {
+            display: block;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            background-color: $div-color3;
+
+            &:hover {
+                color: $main-font-color;
+                background-color: $div-color2;
+            }
+        }
+    }
+}
+
+.index__videos-recommended {
+    padding-top: 40px;
+    background-color: #eee;
+    margin-bottom: 100px;
+}
+
+.index__mosaic-wall {
+    margin-bottom: 100px;
+
+    h1 {
+        margin-bottom: 40px;
+    }
+}
+
+.index__product-banner-2 {
+    margin-bottom: 80px;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: url('../images/index/book3.png');
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: cover;
+        filter: brightness(.7);
+        z-index: -1;
+    }
+
+    &__inner {
+        width: $inner-width;
+    }
+
+    &__infor {
+        margin-top: 100px;
+        color: #fff;
+        margin-bottom: 10px;
+
+        h1 {
+            text-align: left;
+        }
+
+        h3 {
+            font-weight: 400;
+        }
+    }
+
+    &__button {
+        background-color: $div-color4;
+    }
+}

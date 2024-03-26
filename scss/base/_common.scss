@@ -1,0 +1,21 @@
+.flex {
+    display: flex;
+}
+
+.v-center {
+    display: flex;
+    align-items: center;
+}
+
+.link-i {
+    i {
+        transform: scale(1);
+        transition: all .3s ease;
+    }
+
+    &:hover {
+        i {
+            transform: scale(1.1);
+        }
+    }
+}

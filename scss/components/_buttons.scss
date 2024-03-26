@@ -1,0 +1,25 @@
+.more-button {
+    width: calc($column * 2 + $gutter);
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: $div-color2;
+    border-radius: 20px;
+    display: block;
+}
+
+.more-button-s {
+    width: calc($column * 2);
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border: none;
+    background-color: $div-color4;
+    color: $main-font-color2;
+    cursor: pointer;
+    display: block;
+
+    &:hover {
+        background-color: $div-color3;
+    }
+}
